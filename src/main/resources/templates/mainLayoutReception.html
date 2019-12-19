@@ -41,7 +41,7 @@
 			<div class="top-bar">
 				<div class="top-bar-brand">
 					<a th:href="index.html">  <img
-						th:src="@{/looper/assets/images/logo.png}" alt="no imagesloading"
+						th:src="@{/looper/assets/images/logo.png}" alt="imagesloading"
 						style="height: 50px; width: auto;"> 
 					</a>
 				</div>
@@ -85,8 +85,8 @@
 											<!-- .dropdown-item -->
 											<a class="dropdown-item unread">
 												<div class="user-avatar">
-													<!-- <img th:src="/looper/assets/images/avatars/uifaces15.jpg"
-														alt=""> -->
+													 <img th:src=@{/looper/assets/images/avatars/uifaces15.jpg}
+														alt=""> 
 												</div>
 												<div class="dropdown-item-body">
 													<p class="text">Jeffrey Wells created a schedule</p>
@@ -97,8 +97,8 @@
 											<!-- .dropdown-item -->
 											<a class="dropdown-item unread">
 												<div class="user-avatar">
-													<!-- <img th:src="/looper/assets/images/avatars/uifaces16.jpg"
-														alt=""> -->
+													 <img th:src=@{/looper/assets/images/avatars/uifaces16.jpg}
+														alt=""> 
 												</div>
 												<div class="dropdown-item-body">
 													<p class="text">Anna Vargas logged a chat</p>
@@ -109,8 +109,8 @@
 											<!-- .dropdown-item -->
 											<a class="dropdown-item">
 												<div class="user-avatar">
-													<!-- <img th:src="/looper/assets/images/avatars/uifaces17.jpg"
-														alt=""> -->
+													<img th:src=@{/looper/assets/images/avatars/uifaces17.jpg}
+														alt=""> 
 												</div>
 												<div class="dropdown-item-body">
 													<p class="text">Sara Carr invited to Stilearn Admin</p>
@@ -322,11 +322,11 @@
 								<button class="btn-account d-none d-md-flex" type="button"
 									data-toggle="dropdown" aria-haspopup="true"
 									aria-expanded="false">
-									<span class="user-avatar user-avatar-md"> <!-- <img
-										th:src="/looper/assets/images/avatars/profile.jpg" alt=""> -->
+									<span class="user-avatar user-avatar-md"> <img
+										th:src=@{/looper/assets/images/avatars/profile.jpg} alt=""> 
 									</span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span
 										class="account-name">Beni Arisandi</span> <span
-										class="account-description">Marketing Manager</span></span>
+										class="account-description">Admin</span></span>
 								</button>
 								<div class="dropdown-arrow dropdown-arrow-left"></div>
 								<!-- .dropdown-menu -->
@@ -521,99 +521,6 @@
 							<!-- /.menu-item -->
 							<!-- .menu-item -->
 							<li class="menu-item has-child"><a class="menu-link"><span
-									class="menu-icon oi oi-browser"></span> <span class="menu-text">Layouts</span>
-									<span class="badge badge-subtle badge-success">+4</span></a> <!-- child menu -->
-								<ul class="menu">
-									<li class="menu-item"><a th:href="layout-blank.html"
-										class="menu-link">Blank Page</a></li>
-									<li class="menu-item"><a th:href="layout-nosearch.html"
-										class="menu-link">Header no Search</a></li>
-									<li class="menu-item"><a th:href="layout-fullwidth.html"
-										class="menu-link">Full Width</a></li>
-									<li class="menu-item"><a th:href="layout-pagenavs.html"
-										class="menu-link">Page Navs</a></li>
-									<li class="menu-item"><a th:href="layout-pagecover.html"
-										class="menu-link">Page Cover</a></li>
-									<li class="menu-item"><a
-										th:href="layout-pagecover-img.html" class="menu-link">Cover
-											Image</a></li>
-									<li class="menu-item"><a th:href="layout-pagesidebar.html"
-										class="menu-link">Page Sidebar</a></li>
-									<li class="menu-item"><a
-										th:href="layout-pagesidebar-fluid.html" class="menu-link">Sidebar
-											Fluid</a></li>
-									<li class="menu-item"><a
-										th:href="layout-pagesidebar-hidden.html" class="menu-link">Sidebar
-											Hidden</a></li>
-									<li class="menu-item"><a th:href="layout-custom.html"
-										class="menu-link">Custom</a></li>
-								</ul> <!-- /child menu --></li>
-							<!-- /.menu-item -->
-							<!-- .menu-header -->
-							<li class="menu-header">Interfaces</li>
-							<!-- /.menu-header -->
-							<!-- .menu-item -->
-							<li class="menu-item has-child"><a class="menu-link"><span
-									class="menu-icon oi oi-puzzle-piece"></span> <span
-									class="menu-text">Components</span></a> <!-- child menu -->
-								<ul class="menu">
-									<li class="menu-item"><a th:href="component-general.html"
-										class="menu-link">General</a></li>
-									<li class="menu-item"><a th:href="component-icons.html"
-										class="menu-link">Icons</a></li>
-									<li class="menu-item"><a
-										th:href="component-rich-media.html" class="menu-link">Rich
-											Media</a></li>
-									<li class="menu-item"><a
-										th:href="component-list-views.html" class="menu-link">List
-											Views</a></li>
-									<li class="menu-item"><a
-										th:href="component-sortable-nestable.html" class="menu-link">Sortable
-											& Nestable</a></li>
-									<li class="menu-item"><a th:href="component-activity.html"
-										class="menu-link">Activity</a></li>
-									<li class="menu-item"><a th:href="component-steps.html"
-										class="menu-link">Steps</a></li>
-									<li class="menu-item"><a th:href="component-tasks.html"
-										class="menu-link">Tasks</a></li>
-									<li class="menu-item"><a th:href="component-metrics.html"
-										class="menu-link">Metrics</a></li>
-								</ul> <!-- /child menu --></li>
-							<!-- /.menu-item -->
-							<!-- .menu-item -->
-							<li class="menu-item has-child"><a class="menu-link"><span
-									class="menu-icon oi oi-pencil"></span> <span class="menu-text">Forms</span></a>
-								<!-- child menu -->
-								<ul class="menu">
-									<li class="menu-item"><a th:href="form-basic.html"
-										class="menu-link">Basic Elements</a></li>
-									<li class="menu-item"><a th:href="form-autocompletes.html"
-										class="menu-link">Autocompletes</a></li>
-									<li class="menu-item"><a th:href="form-pickers.html"
-										class="menu-link">Pickers</a></li>
-									<li class="menu-item"><a th:href="form-editors.html"
-										class="menu-link">Editors</a></li>
-								</ul> <!-- /child menu --></li>
-							<!-- /.menu-item -->
-							<!-- .menu-item -->
-							<li class="menu-item has-active has-child"><a
-								class="menu-link"><span class="menu-icon fas fa-table"></span>
-									<span class="menu-text">Tables</span></a> <!-- child menu -->
-								<ul class="menu">
-									<li class="menu-item has-active"><a
-										th:href="table-basic.html" class="menu-link">Basic Table</a></li>
-									<li class="menu-item"><a th:href="table-datatables.html"
-										class="menu-link">Datatables</a></li>
-									<li class="menu-item"><a
-										th:href="table-responsive-datatables.html" class="menu-link">Responsive
-											Datatables</a></li>
-									<li class="menu-item"><a
-										th:href="table-filters-datatables.html" class="menu-link">Filter
-											Columns</a></li>
-								</ul> <!-- /child menu --></li>
-							<!-- /.menu-item -->
-							<!-- .menu-item -->
-							<li class="menu-item has-child"><a class="menu-link"><span
 									class="menu-icon oi oi-bar-chart"></span> <span
 									class="menu-text">Collections</span></a> <!-- child menu -->
 								<ul class="menu">
@@ -703,15 +610,7 @@
 				<div class="page-inner">
 					<!-- .page-title-bar -->
 					<header class="page-title-bar">
-						<!-- .breadcrumb -->
-						<!-- <nav aria-label="breadcrumb">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item active"><a ><i
-										class="breadcrumb-icon fa fa-angle-left mr-2"></i>Tables</a></li>
-							</ol>
-						</nav> -->
-						<!-- /.breadcrumb -->
-						<!-- floating action -->
+						
 						<button type="button" class="btn btn-success btn-floated"
 							id="add_umsform" onclick="redirectPage()">
 							<span class="fa fa-plus"></span>
@@ -720,9 +619,7 @@
 						<!-- title and toolbar -->
 						<div class="d-md-flex align-items-md-start">
 							<h1 class="page-title mr-sm-auto">User's Info</h1>
-							<!-- .btn-toolbar -->
-
-							<!-- /.btn-toolbar -->
+							
 						</div>
 						<!-- /title and toolbar -->
 					</header>
@@ -938,7 +835,7 @@
 			<div class="copyright">Copyright © 2018. All right reserved.</div>
 		</footer><!-- /.app-footer --> </main>
 	</div>
-	<
+	
 
 </body>
 </html>

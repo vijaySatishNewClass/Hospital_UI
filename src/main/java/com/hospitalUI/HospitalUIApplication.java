@@ -27,6 +27,10 @@ public class HospitalUIApplication {// implements CommandLineRunner{
 
 	// }
 
+	
+	
+	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(HospitalUIApplication.class, args); // default
 	}
