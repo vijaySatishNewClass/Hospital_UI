@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hospital Management System</title>
+<link rel="stylesheet"
+	th:href="@{/looper/assets/vendor/fontawesome/css/all.css}">
+<link rel="stylesheet"
+	th:href="@{/looper/assets/stylesheets/theme.min.css}"
+	data-skin="default">
+<link rel="stylesheet"
+	th:href="@{/looper/assets/stylesheets/theme-dark.min.css}"
+	data-skin="dark">
+<link rel="stylesheet"
+	th:href="@{/looper/assets/stylesheets/custom.css}">
+<script th:src="@{/looper/assets/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{/looper/assets/vendor/bootstrap/js/popper.min.js}"></script>
+<script th:src="@{/looper/assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/looper/assets/vendor/particles.js/particles.min.js}"></script>
+<script th:src="@{/notify/notify.js}"></script>
+<script th:src="@{/notify/notify.min.js}"></script>
+<script th:src="@{/looper/assets/javascript/theme.min.js}"></script>
+</head>
+<body>
+	<main class="auth"
+		th:style="'background-image: url(/assets/images/bg-01.jpg)'">
+	<div class="auth"
+		th:style="'background-image: url(/assets/images/bg-01.jpg);padding-top: 95px'">
+		<span class="sr-only">Sign In</span>
+
+	</div>
+	<form action="/checkLogin" autocomplete="off" class="auth-form" method="post"
+		accept-charset="utf-8">
+		<input type="hidden" name="module" value="login"> <input
+			type="hidden" name="__csrf_token_name"
+			value="f690796042b0d2a8f3a8e0da4d5f1829">
+		<div class="form-group">
+			<div class="form-label-group">
+				<input type="text" id="inputUser" name="uname"
+					class="form-control placeholder-shown"
+					placeholder="Username" required="required"
+					autofocus="autofocus"> <label for="inputUser">Username</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-label-group">
+				<input type="password" id="inputPassword" name="pass"
+					class="form-control placeholder-shown" placeholder="Password"
+					required="required"> <label for="inputPassword">Password</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-lg btn-primary btn-block" type="submit"
+				id="b-submit-login" onclick="">LOGIN</button>
+			<input type="hidden"
+				value="03AOLTBLRnQ_juZlpdLRi72SwWrs54BgSl2V2ovqp0yzpi-MT-G372DboJvj4Z76MG8VOE44GgJSlrzzzkhF1VeFfaAXJs7K2lXCyQQMDwGB9SB6K2IGqdw6R5EpAJP28mQr32YQ095v0EAAAuj4xSabahVU70qOV3PhyX2qWqm9xv973klAhaOfs4LojVmTvuzTfV38kG_0k-lpipTALIjZP0n26MU3FQ9EmNByejXUF2T7SJKSPMXpDJDLLHruae0BRa9KPfzpTZR1Zh2DN6lR199v16-uDJ2gtv6Riv1EHt7i8r_d98_GdUdI_5eYAzx1-tRdz7jrdKqW9ph6Fk63Sb2r63eMYbCiwvOF3u-IiYzwmjfK05l3ca2M-tFoYoFKKi0isDtASz1t4pj43N8LhzVPuAT5D2sbTPtVkDImvnwPMD_JNwZpRYp__tY07Ko6mI57lSscPywOXL20_zwnCNLX924FWrgBysVRqGoVTRre1f6uzeAC3sYOcg_zLpaU2y83DaN-yg"
+				name="g_recaptcha_response" id="g-recaptcha-response">
+		</div>
+		<div class="form-group text-center">
+			<div class="custom-control custom-control-inline custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="remember-me">
+				<label class="custom-control-label" for="remember-me">Keep
+					me sign in</label>
+			</div>
+		</div>
+		<div class="text-center pt-3">
+			<a th:href="forgetPassword.html" class="link">Forgot
+				Password?</a>
+		</div>
+	</form>
+	<br>
+	<footer class="auth-footer">@HRMS </footer> </main>
+</body>
+</html>
